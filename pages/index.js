@@ -19,7 +19,7 @@ export default function Home() {
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
               (position) => {
-                console.log(position.coords.latitude);
+                console.log(position);
               },
               (error) => {
                 console.error("Error Code = " + error.code + " - " + error.message);
