@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
+import NextImage from '../components/image';
 
 export default function Home() {
   return (
@@ -14,6 +15,12 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <NextImage 
+          src="/images/test.png"
+          width={100}
+          height={100}
+        />
 
         <button onClick={() => {
           if (navigator.geolocation) {
